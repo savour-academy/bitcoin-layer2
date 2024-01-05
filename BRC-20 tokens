@@ -1,0 +1,110 @@
+# MVP Implementation Of BRC-20 Tokens
+
+BRC-20 are standards that facilitate the deployment, minting, and transfer of tokens on Bitcoin using the ordinal protocol. It's an experimental project launched in March 2023 by a pseudonymous programmer named Domo, which involved inscribing individual satoshis with content.
+
+Recall that in January 2023,  Ordinals launched Bitcoin NFTS using satoshis as individual information carriers.  Each satoshi is inscribed with data like Javascript JSON, including videos, data and text, giving them a unique identifier and, hence, non-fungible. The satoshis with the inscriptions are called ordinals.
+
+BRC-20 tokens are unique; they are fungible, while Bitcoin Ordinals are non-fungible (NFTs) and do not implement a specific standard like the BRC-20. Furthermore, while ERC-20 tokens exist on the Ethereum network, BRC-20 tokens exist in Bitcoin. However, they don’t have much functionality as they do not support smart contracts.
+
+## Pros and Cons of BRC-20
+
+### Pros
+
+1. More use cases for Bitcoin
+Besides being a store of value, BRC-20 tokens have opened up new possibilities for utility on the Bitcoin network.
+
+2. Easy to create and mint.
+Unlike ERC-20 tokens, which interact with smart contracts, BRC-20 tokens are relatively easy to create and deploy
+
+3. Inherited security 
+BRC-20 tokens leverage Bitcoin’s imperial  security and proof-of-work mechanism to boost its reputation, secure itself and attract builders
+
+### Cons
+
+1. Limited functionality and utility
+Due to BRC-20’s lack of support for smart contracts,  it may be challenging for developers to create complex applications, automate processes and utilise numerous smart contract-enabled capabilities. Additionally, BRC-20 tokens cannot be utilised to tokenise non-fungible assets or implement conditional transfers.
+
+2. Increase in Bitcoin transaction cost and congestion issues 
+Since the launch of Bitcoin ordinals, the number of transactions has increased on the Bitcoin network, causing Bitcoin mempool congestion  and subsequent surge in transaction fees
+
+3. High Risk and slower adoption potential
+BRC-20  tokens like ORDI and SATS may have surged in price and popularity but are still in the early stages of development. They are generally classified as high-risk, with some developers calling them spam. As a result, the controversy does not augur well for its potential global adoption.
+
+## How to implement BRC-20 (create, deploy and transfer)
+First, let's cover creating and deploying BRC-20 tokens before exploring how to implement BRC-20 in a typical project. 
+
+To implement a BRC-20, you will need to deploy it first. You can create a BRC-20 token using the ordinals protocol - which specifies how inscriptions on Bitcoin are created, managed and transferred.
+
+To create a BRC-20 token, you will need a Unisat wallet, which can support BRC-20 tokens (fungible tokens) and Bitcoin ordinal NFTs. Unisat wallet allows you to mint, trade and hold the BRC-20 assets on the Bitcoin network.
+ 
+Download Unisat here https://unisat.io/download
+
+ 
+After creating your wallet, transfer some funds for minting and deploying BRC20 tokens. Send some BTC to the Unisat wallet. Simply copy your wallet’s address and send the desired amount from an exchange of your choice.
+
+Visit the Unisat platform, Select Inscribe and Deploy. 
+Fill in the 4-digit token ticker symbol, the total supply and limit per mint. 
+Then click “Next;” to generate the JSON data for inscription.
+Then, provide the receiver address to receive the tokens. 
+
+After payment, be patient, as the BRC-20 tokens will be deployed. Again, the transaction will take some time to go through. While waiting, you can copy the witness data from the transaction and run it through a hex > aASCII converter to see the JSON data inscribed to the Bitcoin network.
+
+Unisat.io's platform also allows you to mint tokens. Simply toggle on the Mint option and specify all the details before clicking Next.
+
+## How to develop a project on BRC-20
+BRC-20 tokens may lack smart contract functionality, but there are quite several projects developers can build using BRC-20 tokens. For example, BRC-20 token DEXes and yield farms, prediction markets, NFT marketplaces and Play-To-Earn games and decentralised governance
+
+Examples of projects building on BRC-20 standards, i.e. Ordinal, Bitcoin DeFi hub, Pepe money (PEPE), Xverse, Sovryn and BitCrystals etc
+
+### BRC–20 MVP development guideline
+1. MVP Definition:
+Purpose: Problems you are solving and value that the token will offer
+Target audience: Who will use your token?
+Use case: How will your token be used within the project?
+
+2. Technical Details:
+
+Token Specifications:
+Name and symbol
+Total supply and minting mechanism
+Decimal places
+On-chain metadata (optional)
+
+Development Tools:
+Libraries: Ordinal libraries, Bitcoin Core, Command-Line Interface (CLI) tools
+JSON: Define token specifications in JSON format.
+Programming languages: Python, JavaScript, Rust.
+API integration: Ordinal’s APIs.
+
+Security:
+Secure wallets for storing private keys.
+inscription handling best practices
+security firms audits
+
+3. MVP Implementation:
+Focus on core functionality: Start with minimal features essential for your use case.
+Manual processes: Consider manual token transfers and minting before automating through scripts or dApps.
+Integrations: Integrate with Ordinals Wallet, Oswap, or Bitstamp for wallet support and basic trading.
+
+## BRC-21 Token Standard
+The BRC-21 token standard aims to bridge from other chains to Bitcoin chains using the BRC-20 approach of bridging assets on Bitcoin. It utilises the mint, burn and redeem mechanism to bridge even ERC-20 tokens to Bitcoin.
+
+For details on how to implement BRC-21, please see https://interlay-labs.gitbook.io/brc-21/.
+
+
+## Sources
+https://jamesbachini.com/brc20-bitcoin-token/
+https://unisat.io/inscribe
+https://domo-2.gitbook.io/brc-20-experiment/
+https://jamesbachini.com/brc20-bitcoin-token/
+https://pkg.go.dev/github.com/okx/go-wallet-sdk/coins/bitcoin/brc20
+https://bitcoin.org/en/bitcoin-core/contribute/documentation
+https://www.brc-20.io/
+https://github.com/bitcoin-core
+https://docs.ordinals.com/
+https://cointelegraph.com/learn/what-is-a-brc-20-token-standard-an-overview
+https://chain.link/education-hub/brc-20-token
+https://www.gate.io/learn/articles/what-are-brc-20-tokens/828
+https://interlay-labs.gitbook.io/brc-21/
+
+
