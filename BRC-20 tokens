@@ -2,9 +2,9 @@
 
 BRC-20 are standards that facilitate the deployment, minting, and transfer of tokens on Bitcoin using the ordinal protocol. It's an experimental project launched in March 2023 by a pseudonymous programmer named Domo, which involved inscribing individual satoshis with content.
 
-Recall that in January 2023,  Ordinals launched Bitcoin NFTS using satoshis as individual information carriers.  Each satoshi is inscribed with data like Javascript JSON, including videos, data and text, giving them a unique identifier and, hence, non-fungible. The satoshis with the inscriptions are called ordinals.
+Recall that in January 2023,  Ordinals launched Bitcoin NFTS using satoshis as individual information carriers.  Each satoshi is inscribed with data like Javascript JSON, including videos, data and text, giving them a unique identifier and, hence, non-fungible. The satoshis with the inscriptions are called Ordinals.
 
-BRC-20 tokens are unique; they are fungible, while Bitcoin Ordinals are non-fungible (NFTs) and do not implement a specific standard like the BRC-20. Furthermore, while ERC-20 tokens exist on the Ethereum network, BRC-20 tokens exist in Bitcoin. However, they don’t have much functionality as they do not support smart contracts.
+BRC-20 tokens are unique; they are fungible, while Bitcoin Ordinals are non-fungible (NFTs) and do not implement a specific standard like BRC-20 tokens. Unlike ERC-20 tokens on the Ethereum network, BRC-20 tokens exist in Bitcoin, have little functionality, and cannot support smart contracts.
 
 ## Pros and Cons of BRC-20
 
@@ -87,7 +87,7 @@ Manual processes: Consider manual token transfers and minting before automating 
 Integrations: Integrate with Ordinals Wallet, Oswap, or Bitstamp for wallet support and basic trading.
 
 ## BRC-21 Token Standard
-The BRC-21 token standard aims to bridge from other chains to Bitcoin chains using the BRC-20 approach of bridging assets on Bitcoin. It utilises the mint, burn and redeem mechanism to bridge even ERC-20 tokens to Bitcoin.
+The BRC-21 token standard aims to bridge other chains to Bitcoin using the BRC-20 approach of inscribing assets on Bitcoin. It utilises the mint, burn and redeem mechanism to bridge even ERC-20 tokens to Bitcoin.
 
 For details on how to implement BRC-21, please see https://interlay-labs.gitbook.io/brc-21/.
 
